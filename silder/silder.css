@@ -1,10 +1,13 @@
 .slider_profile .slider_card {
-    display: flex;
-    gap: 30px;
-  }
-  .slider_profile .slider_card .slider_text .quote {
-    max-width: 30px;
-  }
+  display: flex;
+  gap: 30px;
+  padding-top: 76px;
+}
+.slider_profile .slider_card .slider_text .quote {
+  max-width: 78px;
+}
+
+
   .slider_profile .slider_card .slider_text .feedback {
     font-family: "Roboto Flex", sans-serif;
     font-size: 22px;
@@ -14,16 +17,17 @@
  font-style: oblique;
     margin-top: 23px;
     margin-bottom: 28px;
-    word-break: break-all;
+    /* word-break: break-all; */
   }
   .slider_profile .slider_card .slider_text .name {
     font-family: "Abril Fatface", serif;
     font-size: 28px;
     line-height: 120%;
     font-weight: 700;
-    color: #000;
-    margin-bottom: 8px;
-  }
+    padding-top: 78px;
+    color: #00000065;
+    margin-bottom: 10px;
+}
   .slider_profile .slider_card .slider_text .title {
     font-family: "Abril Fatface", serif;
     font-size: 24px;

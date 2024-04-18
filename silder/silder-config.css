@@ -2,16 +2,17 @@
 .owl-theme .owl-nav {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
+  display: none;
 }
 .owl-theme .owl-nav {
-  margin-top: 10px;
+  margin-top: -185px;
   display: flex;
   gap: 15px;
   position: absolute;
-  left: 300px;
-  bottom: 44px;
+  right: 33%;
   z-index: 99999;
 }
+
 .owl-theme .owl-nav [class*="owl-"] {
   width: 50px;
   height: 50px;
@@ -21,11 +22,14 @@
 }
 .owl-theme .owl-nav .owl-prev {
   font-size: 0px;
- background-image: url(img/Right arrow.png) !important;
+  background-image: url( arrownext.png) !important;
+  background-repeat: no-repeat;
+   background-position: center;
 }
 .owl-theme .owl-nav .owl-next {
   font-size: 0px;
-  background-image: url(../images/arrownext.png) !important;
+ background-image: url(arrow.png);
+  background-position: center;
 }
 .owl-theme .owl-nav .disabled {
   opacity: 0.5;
@@ -72,6 +76,9 @@
   margin: auto;
   display: block;
 }
+ 
+
+
 @media only screen and (max-width: 767px) {
   .owl-theme .owl-dots .owl-dot span {
     margin: 5px 5px;

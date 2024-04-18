@@ -13,6 +13,10 @@
   text-decoration: none;
   list-style: none;
 }
+html {
+scroll-behavior: smooth;
+
+}
 
 :root {
   --color_1-primary: #fb5c00;
@@ -86,6 +90,54 @@
   gap: 65px;
   align-items: center;
 }
+
+ 
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+
+
+
+
+
+
+
 
 .navbar a {
   font-size: 22px;
@@ -276,13 +328,11 @@
   align-items: center;
   justify-content: center;
   gap: 70px;
-
 }
 
 .main_img img {
   width: 450px;
   margin-left: 95px;
-
 }
 
 .secnd-img {
@@ -290,11 +340,9 @@
   bottom: 119px;
 }
 
-
 .right-side {
   max-width: 500px;
 }
-
 
 .sect2_heading {
   position: relative;
@@ -307,8 +355,6 @@
   font-family: "Abril Fatface", serif;
   font-weight: 600;
   color: var(--color_3-primary);
-
-
 }
 
 .sect2_heading img {
@@ -324,7 +370,6 @@
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   color: var(--color_3-primary);
-
 }
 
 .sect2_heading h6 span {
@@ -339,16 +384,11 @@
   color: var(--color_2-primary);
 }
 
-
-
 .right-side_btn {
   padding-top: 53px;
-
 }
 
-
 .right-side_btn a {
-
   padding: 17px 37px 17px 43px;
   background-color: var(--color_5-primary);
   border-radius: 28px;
@@ -362,19 +402,17 @@
 
 /* SECTION-3 STRAT  */
 .section-3 {
-  background-image: url(img/design\ \(1\).png);
+  background-image: url(img/design\\(1\).png);
   background-repeat: no-repeat;
   min-height: 1058px;
 }
 
 .sect-3_heading {
-  background-image: url(img/Vector\ 173\ \(1\).png);
+  background-image: url(img/Vector\173\\(1\).png);
   background-repeat: no-repeat;
 
   background-position: center;
   background-position-y: 0;
-
-
 }
 
 .sect-3_heading h2 {
@@ -397,21 +435,15 @@
   color: var(--color_2-primary);
 }
 
-
 .section-3_content {
   display: flex;
   gap: 50px;
-
 }
-
-
-
-
 
 .content-card {
   max-width: 370px;
   min-height: 601px;
-  transition: .50s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .content-card h6 {
@@ -436,13 +468,11 @@
   background-color: #c4dffb;
   box-shadow: 6px 5px 6px 5px #00000018;
   border-radius: 28px;
-  color: #C9B5D8;
-
+  color: #c9b5d8;
 }
 
 .section-3 .first:hover {
   padding-top: 30px;
-
 }
 
 .section-3 .second:hover {
@@ -453,7 +483,6 @@
 .section-3 .third:hover {
   padding-top: 40px;
   background-color: #2b3240;
-
 }
 
 .secion-3_btn {
@@ -467,10 +496,7 @@
   line-height: 1.2em;
 
   font-weight: 400;
-
 }
-
-
 
 .animated-button {
   position: relative;
@@ -516,7 +542,7 @@
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: #E8622C;
+  background-color: #e8622c;
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -531,7 +557,7 @@
 
 .animated-button:hover {
   box-shadow: 0 0 0 12px transparent;
-  color: #FFF;
+  color: #fff;
   border-radius: 12px;
 }
 
@@ -562,7 +588,6 @@
   opacity: 1;
 }
 
-
 .section-4 {
   min-height: 551px;
   background-image: url(img/Promise.png);
@@ -576,7 +601,6 @@
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   color: var(--color_3-primary);
-
 }
 
 .about_freelance {
@@ -584,7 +608,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 
 .first_about {
   display: flex;
@@ -600,8 +623,6 @@
   min-height: 191px;
 }
 
-
-
 .about-text h4 {
   padding-bottom: 21px;
   font-size: 30px;
@@ -609,7 +630,6 @@
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   color: var(--color_3-primary);
-
 }
 
 .about-text p {
@@ -646,16 +666,15 @@
   padding-top: 96px;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 80px;
-  
 }
 .exprience h6 {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 20px;
-  font-size:60px ;
-  list-style:120%;
+  font-size: 60px;
+  list-style: 120%;
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   color: var(--color_3-primary);
@@ -677,19 +696,195 @@
 }
 
 .silder-prent {
- 
   min-height: 500px;
   background-image: url(img/Vector.png);
   background-repeat: no-repeat;
-
-
 }
 
 
 
+ 
 
 
 
-img.profile {
-  padding-top: 39px;
+
+
+
+
+ 
+
+.section-footer {
+  min-height: 400px;
+  padding-top: 100px;
+  background-image: url(img/Contact.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }
+
+
+ 
+.footer-content  h4 {
+  font-size: 80px;
+  line-height: 120%;
+  font-family: "Abril Fatface", serif;
+  color: var(--color-_12primary);
+  text-align: center;
+  font-weight: 400;
+
+}
+.footer-content  p {
+  font-size: 22px;
+  line-height: 160%;
+  font-family: "Roboto Flex", sans-serif;
+  color: var(--color_2-primary);
+  text-align: center;
+  font-weight: 400;
+  padding-top: 11px;
+
+}
+.footer-content  p span  {
+font-size: 25px;
+line-height: 1.2em;
+font-family: "Aguafina Script", cursive;
+font-weight: 500;
+color: var(--color_5-primary);
+}
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+ padding-left: 0%;
+ padding-top: 0px;
+ transition: 1.0s ease-in-out;
+ cursor: pointer;
+}
+
+.main:hover{
+  padding-left: 40%;
+  padding-top: 20px;
+}
+
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+
