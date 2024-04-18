@@ -13,8 +13,9 @@
   text-decoration: none;
   list-style: none;
 }
+
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
 }
 
@@ -91,7 +92,7 @@ scroll-behavior: smooth;
   align-items: center;
 }
 
- 
+
 .hamburger {
   cursor: pointer;
 }
@@ -115,18 +116,18 @@ scroll-behavior: smooth;
   stroke-width: 3;
   /* Define the transition for transforming the Stroke */
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line-top-bottom {
   stroke-dasharray: 12 63;
 }
 
-.hamburger input:checked + svg {
+.hamburger input:checked+svg {
   transform: rotate(-45deg);
 }
 
-.hamburger input:checked + svg .line-top-bottom {
+.hamburger input:checked+svg .line-top-bottom {
   stroke-dasharray: 20 300;
   stroke-dashoffset: -32.42;
 }
@@ -403,16 +404,16 @@ scroll-behavior: smooth;
 /* SECTION-3 STRAT  */
 .section-3 {
   background-image: url(img/design\\(1\).png);
-  background-repeat: no-repeat;
-  min-height: 1058px;
+  background-repeat:no-repeat;
+  min-height:1058px;
 }
 
 .sect-3_heading {
   background-image: url(img/Vector\173\\(1\).png);
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
 
-  background-position: center;
-  background-position-y: 0;
+  background-position:center;
+  background-position-y:0;
 }
 
 .sect-3_heading h2 {
@@ -669,6 +670,7 @@ scroll-behavior: smooth;
   justify-content: center;
   gap: 80px;
 }
+
 .exprience h6 {
   display: flex;
   align-items: center;
@@ -679,6 +681,7 @@ scroll-behavior: smooth;
   font-weight: 400;
   color: var(--color_3-primary);
 }
+
 .exprience h6 span {
   font-size: 22px;
   line-height: 120%;
@@ -703,7 +706,6 @@ scroll-behavior: smooth;
 
 
 
- 
 
 
 
@@ -711,7 +713,8 @@ scroll-behavior: smooth;
 
 
 
- 
+
+
 
 .section-footer {
   min-height: 400px;
@@ -722,8 +725,8 @@ scroll-behavior: smooth;
 }
 
 
- 
-.footer-content  h4 {
+
+.footer-content h4 {
   font-size: 80px;
   line-height: 120%;
   font-family: "Abril Fatface", serif;
@@ -732,7 +735,8 @@ scroll-behavior: smooth;
   font-weight: 400;
 
 }
-.footer-content  p {
+
+.footer-content p {
   font-size: 22px;
   line-height: 160%;
   font-family: "Roboto Flex", sans-serif;
@@ -742,12 +746,13 @@ scroll-behavior: smooth;
   padding-top: 11px;
 
 }
-.footer-content  p span  {
-font-size: 25px;
-line-height: 1.2em;
-font-family: "Aguafina Script", cursive;
-font-weight: 500;
-color: var(--color_5-primary);
+
+.footer-content p span {
+  font-size: 25px;
+  line-height: 1.2em;
+  font-family: "Aguafina Script", cursive;
+  font-weight: 500;
+  color: var(--color_5-primary);
 }
 
 
@@ -756,13 +761,13 @@ color: var(--color_5-primary);
   display: flex;
   flex-direction: column;
   gap: 0.5em;
- padding-left: 0%;
- padding-top: 0px;
- transition: 1.0s ease-in-out;
- cursor: pointer;
+  padding-left: 0%;
+  padding-top: 0px;
+  transition: 1.0s ease-in-out;
+  cursor: pointer;
 }
 
-.main:hover{
+.main:hover {
   padding-left: 40%;
   padding-top: 20px;
 }
@@ -886,5 +891,3 @@ color: var(--color_5-primary);
 .card4:hover .discord {
   fill: white;
 }
-
-
