@@ -223,10 +223,10 @@ html {
 /* HERO CONTENT STRAT  */
 
 .hero_content {
-  max-width: 1071px;
-  height: 563px;
+  
+ 
 
-  margin-left: 231px;
+   
   margin-top: 154px;
 }
 
@@ -251,45 +251,36 @@ html {
 
 .hero_cards {
   margin-top: 104px;
-  min-height: 334px;
+  
   display: flex;
   gap: 71px;
+  justify-content: center;
 }
 
 .hero_card {
   padding: 34px 36px 41px 40px;
   background-color: var(--color_4-primary);
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  -webkit-box-shadow: 7px -4px 14px -1px rgba(255,188,149,1);
+  -moz-box-shadow: 7px -4px 14px -1px rgba(255,188,149,1);
+  box-shadow: 7px -4px 14px -1px rgba(255,188,149,1);
 }
 
 .card-2 {
   position: relative;
   bottom: 41px;
   background-color: #c87e53;
+
 }
 
-.card-2:hover {
-  background-color: #ff040480;
-}
+  .hero_card .hero-h3 {
+    color: #FFF;
+  }
 
-.hero_card:nth-child(1):hover {
-  background-color: #2c292910;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
+ .hero_card #hero-3 {
+  color: #FFF;
+ }
 
-.hero_card:nth-child(3):hover {
-  background-color: #2c292910;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
 
-.hero_card:nth-child(2) h3 {
-  color: var(--color_4-primary);
-}
-
-.hero_card:nth-child(2) p {
-  color: var(--color_4-primary);
-}
 
 .hero_card h3 {
   font-size: 28px;
@@ -442,11 +433,11 @@ html {
   gap: 50px;
 }
 
-.content-card {
+/* .content-card {
   max-width: 370px;
   min-height: 601px;
   transition: 0.5s ease-in-out;
-}
+} */
 
 .content-card h6 {
   text-align: center;
@@ -455,6 +446,7 @@ html {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   color: var(--color-_12primary);
+  
 }
 
 .content-card p {
@@ -466,26 +458,7 @@ html {
   color: var(--color_2-primary);
 }
 
-.content-card:hover {
-  background-color: #c4dffb;
-  box-shadow: 6px 5px 6px 5px #00000018;
-  border-radius: 28px;
-  color: #c9b5d8;
-}
 
-.section-3 .first:hover {
-  padding-top: 30px;
-}
-
-.section-3 .second:hover {
-  padding-top: 40px;
-  background-color: #de7456;
-}
-
-.section-3 .third:hover {
-  padding-top: 40px;
-  background-color: #2b3240;
-}
 
 .secion-3_btn {
   text-align: center;
