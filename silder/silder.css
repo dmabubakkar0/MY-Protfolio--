@@ -1,0 +1,38 @@
+.slider_profile .slider_card {
+    display: flex;
+    gap: 30px;
+  }
+  .slider_profile .slider_card .slider_text .quote {
+    max-width: 30px;
+  }
+  .slider_profile .slider_card .slider_text .feedback {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 400;
+  color: var(--color_2-primary);
+ font-style: oblique;
+    margin-top: 23px;
+    margin-bottom: 28px;
+    word-break: break-all;
+  }
+  .slider_profile .slider_card .slider_text .name {
+    font-family: "Abril Fatface", serif;
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  .slider_profile .slider_card .slider_text .title {
+    font-family: "Abril Fatface", serif;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #888888;
+  }
+  
+  /* Only Mobile */
+  @media only screen and (max-width: 767px) {
+  }
+  
